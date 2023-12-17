@@ -1,0 +1,36 @@
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231209_180002-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-09 18:00:02.469307
+Config  : ./helpdesk.test/private/backups/20231209_180002-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231209_180002-helpdesk_test-database.sql.gz         302.4KiB
+Backup for Site helpdesk.test has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231210_000002-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-10 00:00:03.524441
+Config  : ./helpdesk.test/private/backups/20231210_000002-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231210_000002-helpdesk_test-database.sql.gz         310.0KiB
+Backup for Site helpdesk.test has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231212_180003-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-12 18:00:05.297467
+Config  : ./helpdesk.test/private/backups/20231212_180003-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231212_180003-helpdesk_test-database.sql.gz         317.1KiB
+Backup for Site helpdesk.test has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231213_180002-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-13 18:00:03.261610
+Config  : ./helpdesk.test/private/backups/20231213_180002-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231213_180002-helpdesk_test-database.sql.gz         328.9KiB
+Backup for Site helpdesk.test has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231216_180002-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-16 18:00:03.240776
+Config  : ./helpdesk.test/private/backups/20231216_180002-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231216_180002-helpdesk_test-database.sql.gz         338.8KiB
+Backup for Site helpdesk.test has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _3b1b145c7a0f6889 -p********** _3b1b145c7a0f6889 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./helpdesk.test/private/backups/20231217_000002-helpdesk_test-database.sql.gz
+
+Backup Summary for helpdesk.test at 2023-12-17 00:00:03.136222
+Config  : ./helpdesk.test/private/backups/20231217_000002-helpdesk_test-site_config_backup.json 117.0B
+Database: ./helpdesk.test/private/backups/20231217_000002-helpdesk_test-database.sql.gz         341.5KiB
+Backup for Site helpdesk.test has been successfully completed

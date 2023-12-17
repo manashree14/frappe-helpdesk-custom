@@ -1,0 +1,646 @@
+2023-12-09 14:19:36,575 DEBUG cd frappe-bench && python3 -m venv env
+2023-12-09 14:19:42,357 DEBUG cd frappe-bench && /home/manashree/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-12-09 14:19:44,323 DEBUG cd frappe-bench && /home/manashree/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-12-09 14:19:45,623 LOG Getting frappe
+2023-12-09 14:19:45,624 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-12-09 14:19:50,884 LOG Installing frappe
+2023-12-09 14:19:50,885 DEBUG cd /home/manashree/frappe-bench && /home/manashree/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/manashree/frappe-bench/apps/frappe 
+2023-12-09 14:20:19,253 DEBUG cd /home/manashree/frappe-bench/apps/frappe && yarn install
+2023-12-09 14:20:34,061 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-09 14:20:34,063 DEBUG cd frappe-bench && bench build
+2023-12-09 14:20:34,216 INFO /usr/local/bin/bench build
+2023-12-09 14:20:58,975 LOG setting up backups
+2023-12-09 14:20:58,983 LOG backups were set up
+2023-12-09 14:20:58,985 INFO Bench frappe-bench initialized
+2023-12-09 14:24:11,123 INFO /usr/local/bin/bench get-app helpdesk --branch version-14
+2023-12-09 14:24:11,604 LOG Getting helpdesk
+2023-12-09 14:24:11,604 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk.git --branch version-14 --depth 1 --origin upstream
+2023-12-09 14:24:13,862 LOG Installing helpdesk
+2023-12-09 14:24:14,085 DEBUG cd /home/manashree/frappe-bench && /home/manashree/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/manashree/frappe-bench/apps/helpdesk 
+2023-12-09 14:24:16,054 DEBUG cd /home/manashree/frappe-bench/apps/helpdesk && yarn install
+2023-12-09 14:24:37,698 DEBUG bench build --app helpdesk
+2023-12-09 14:24:37,866 INFO /usr/local/bin/bench build --app helpdesk
+2023-12-09 14:25:17,269 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-09 14:25:41,964 INFO /usr/local/bin/bench new-site helpdesk.test
+2023-12-09 14:28:26,798 INFO /usr/local/bin/bench --site helpdesk.test install-app helpdesk
+2023-12-09 14:28:47,024 INFO /usr/local/bin/bench --site helpdesk.test add-to-hosts
+2023-12-09 14:30:10,112 INFO /usr/local/bin/bench set-config -g developer_mode 1
+2023-12-09 14:30:14,722 INFO /usr/local/bin/bench start
+2023-12-09 14:30:15,565 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 14:30:15,572 INFO /usr/local/bin/bench watch
+2023-12-09 14:30:15,578 INFO /usr/local/bin/bench schedule
+2023-12-09 14:30:15,646 INFO /usr/local/bin/bench worker
+2023-12-09 14:36:08,110 INFO /usr/local/bin/bench --site helpdesk.test clear-cache
+2023-12-09 14:36:14,852 INFO /usr/local/bin/bench start
+2023-12-09 14:36:15,502 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 14:36:15,514 INFO /usr/local/bin/bench watch
+2023-12-09 14:36:15,535 INFO /usr/local/bin/bench schedule
+2023-12-09 14:36:15,581 INFO /usr/local/bin/bench worker
+2023-12-09 15:16:39,546 INFO /usr/local/bin/bench start
+2023-12-09 15:16:40,305 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 15:16:40,333 INFO /usr/local/bin/bench schedule
+2023-12-09 15:16:40,369 INFO /usr/local/bin/bench worker
+2023-12-09 15:16:40,377 INFO /usr/local/bin/bench watch
+2023-12-09 17:21:04,604 INFO /usr/local/bin/bench start
+2023-12-09 17:21:05,337 INFO /usr/local/bin/bench watch
+2023-12-09 17:21:05,343 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 17:21:05,387 INFO /usr/local/bin/bench schedule
+2023-12-09 17:21:05,429 INFO /usr/local/bin/bench worker
+2023-12-09 17:34:39,926 INFO /usr/local/bin/bench start
+2023-12-09 17:34:40,601 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 17:34:40,613 INFO /usr/local/bin/bench watch
+2023-12-09 17:34:40,647 INFO /usr/local/bin/bench worker
+2023-12-09 17:34:40,669 INFO /usr/local/bin/bench schedule
+2023-12-09 17:45:50,573 INFO /usr/local/bin/bench start
+2023-12-09 17:45:51,204 INFO /usr/local/bin/bench watch
+2023-12-09 17:45:51,223 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 17:45:51,245 INFO /usr/local/bin/bench schedule
+2023-12-09 17:45:51,257 INFO /usr/local/bin/bench worker
+2023-12-09 18:00:01,479 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-09 23:47:46,528 INFO /usr/local/bin/bench start
+2023-12-09 23:47:47,208 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 23:47:47,244 INFO /usr/local/bin/bench worker
+2023-12-09 23:47:47,252 INFO /usr/local/bin/bench schedule
+2023-12-09 23:47:47,279 INFO /usr/local/bin/bench watch
+2023-12-09 23:48:25,126 INFO /usr/local/bin/bench start
+2023-12-09 23:48:25,770 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 23:48:25,779 INFO /usr/local/bin/bench watch
+2023-12-09 23:48:25,831 INFO /usr/local/bin/bench schedule
+2023-12-09 23:48:25,844 INFO /usr/local/bin/bench worker
+2023-12-09 23:51:01,226 INFO /usr/local/bin/bench start
+2023-12-09 23:51:01,892 INFO /usr/local/bin/bench serve --port 8000
+2023-12-09 23:51:01,907 INFO /usr/local/bin/bench watch
+2023-12-09 23:51:01,943 INFO /usr/local/bin/bench worker
+2023-12-09 23:51:01,948 INFO /usr/local/bin/bench schedule
+2023-12-10 00:00:02,247 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-10 00:39:13,426 INFO /usr/local/bin/bench start
+2023-12-10 00:39:14,158 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 00:39:14,187 INFO /usr/local/bin/bench worker
+2023-12-10 00:39:14,216 INFO /usr/local/bin/bench watch
+2023-12-10 00:39:14,232 INFO /usr/local/bin/bench schedule
+2023-12-10 00:42:36,318 INFO /usr/local/bin/bench build
+2023-12-10 00:43:15,153 INFO /usr/local/bin/bench build
+2023-12-10 00:44:11,316 INFO /usr/local/bin/bench build
+2023-12-10 00:44:54,665 INFO /usr/local/bin/bench build
+2023-12-10 00:45:09,975 INFO /usr/local/bin/bench build
+2023-12-10 00:45:48,241 INFO /usr/local/bin/bench build
+2023-12-10 00:46:26,658 INFO /usr/local/bin/bench start
+2023-12-10 00:46:27,277 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 00:46:27,284 INFO /usr/local/bin/bench schedule
+2023-12-10 00:46:27,307 INFO /usr/local/bin/bench watch
+2023-12-10 00:46:27,336 INFO /usr/local/bin/bench worker
+2023-12-10 00:50:26,293 INFO /usr/local/bin/bench build
+2023-12-10 00:51:41,022 INFO /usr/local/bin/bench start
+2023-12-10 00:51:41,863 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 00:51:41,939 INFO /usr/local/bin/bench watch
+2023-12-10 00:51:41,949 INFO /usr/local/bin/bench schedule
+2023-12-10 00:51:41,984 INFO /usr/local/bin/bench worker
+2023-12-10 00:55:02,712 INFO /usr/local/bin/bench build
+2023-12-10 00:56:45,444 INFO /usr/local/bin/bench start
+2023-12-10 00:56:46,160 INFO /usr/local/bin/bench watch
+2023-12-10 00:56:46,167 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 00:56:46,171 INFO /usr/local/bin/bench schedule
+2023-12-10 00:56:46,193 INFO /usr/local/bin/bench worker
+2023-12-10 01:13:04,731 INFO /usr/local/bin/bench build
+2023-12-10 01:13:57,590 INFO /usr/local/bin/bench start
+2023-12-10 01:13:58,443 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 01:13:58,453 INFO /usr/local/bin/bench watch
+2023-12-10 01:13:58,478 INFO /usr/local/bin/bench schedule
+2023-12-10 01:13:58,513 INFO /usr/local/bin/bench worker
+2023-12-10 01:16:01,683 INFO /usr/local/bin/bench build
+2023-12-10 01:16:57,175 INFO /usr/local/bin/bench start
+2023-12-10 01:16:57,826 INFO /usr/local/bin/bench schedule
+2023-12-10 01:16:57,833 INFO /usr/local/bin/bench serve --port 8000
+2023-12-10 01:16:57,853 INFO /usr/local/bin/bench watch
+2023-12-10 01:16:57,909 INFO /usr/local/bin/bench worker
+2023-12-12 13:48:04,889 INFO /usr/local/bin/bench build
+2023-12-12 13:49:17,767 INFO /usr/local/bin/bench start
+2023-12-12 13:49:18,533 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 13:49:18,556 INFO /usr/local/bin/bench schedule
+2023-12-12 13:49:18,587 INFO /usr/local/bin/bench watch
+2023-12-12 13:49:18,594 INFO /usr/local/bin/bench worker
+2023-12-12 14:47:27,255 INFO /usr/local/bin/bench start
+2023-12-12 14:47:27,843 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 14:47:27,862 INFO /usr/local/bin/bench schedule
+2023-12-12 14:47:27,891 INFO /usr/local/bin/bench watch
+2023-12-12 14:47:27,894 INFO /usr/local/bin/bench worker
+2023-12-12 14:48:50,784 INFO /usr/local/bin/bench build
+2023-12-12 14:49:54,738 INFO /usr/local/bin/bench start
+2023-12-12 14:49:55,389 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 14:49:55,397 INFO /usr/local/bin/bench watch
+2023-12-12 14:49:55,409 INFO /usr/local/bin/bench schedule
+2023-12-12 14:49:55,417 INFO /usr/local/bin/bench worker
+2023-12-12 14:51:18,857 INFO /usr/local/bin/bench build
+2023-12-12 14:52:22,727 INFO /usr/local/bin/bench start
+2023-12-12 14:52:23,359 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 14:52:23,380 INFO /usr/local/bin/bench watch
+2023-12-12 14:52:23,400 INFO /usr/local/bin/bench worker
+2023-12-12 14:52:23,407 INFO /usr/local/bin/bench schedule
+2023-12-12 15:23:09,891 INFO /usr/local/bin/bench build
+2023-12-12 15:24:32,994 INFO /usr/local/bin/bench start
+2023-12-12 15:24:33,653 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:24:33,665 INFO /usr/local/bin/bench watch
+2023-12-12 15:24:33,705 INFO /usr/local/bin/bench schedule
+2023-12-12 15:24:33,710 INFO /usr/local/bin/bench worker
+2023-12-12 15:26:23,478 INFO /usr/local/bin/bench build
+2023-12-12 15:27:43,948 INFO /usr/local/bin/bench start
+2023-12-12 15:27:44,591 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:27:44,602 INFO /usr/local/bin/bench schedule
+2023-12-12 15:27:44,614 INFO /usr/local/bin/bench watch
+2023-12-12 15:27:44,663 INFO /usr/local/bin/bench worker
+2023-12-12 15:32:37,801 INFO /usr/local/bin/bench build
+2023-12-12 15:33:56,332 INFO /usr/local/bin/bench build
+2023-12-12 15:34:56,448 INFO /usr/local/bin/bench start
+2023-12-12 15:34:57,144 INFO /usr/local/bin/bench schedule
+2023-12-12 15:34:57,147 INFO /usr/local/bin/bench watch
+2023-12-12 15:34:57,152 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:34:57,158 INFO /usr/local/bin/bench worker
+2023-12-12 15:36:05,121 INFO /usr/local/bin/bench build
+2023-12-12 15:36:59,239 INFO /usr/local/bin/bench start
+2023-12-12 15:36:59,937 INFO /usr/local/bin/bench schedule
+2023-12-12 15:36:59,942 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:36:59,950 INFO /usr/local/bin/bench watch
+2023-12-12 15:36:59,994 INFO /usr/local/bin/bench worker
+2023-12-12 15:39:33,985 INFO /usr/local/bin/bench build
+2023-12-12 15:40:28,252 INFO /usr/local/bin/bench start
+2023-12-12 15:40:28,971 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:40:28,978 INFO /usr/local/bin/bench worker
+2023-12-12 15:40:28,992 INFO /usr/local/bin/bench watch
+2023-12-12 15:40:29,051 INFO /usr/local/bin/bench schedule
+2023-12-12 15:52:05,153 INFO /usr/local/bin/bench build
+2023-12-12 15:53:32,871 INFO /usr/local/bin/bench start
+2023-12-12 15:53:33,891 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:53:33,940 INFO /usr/local/bin/bench watch
+2023-12-12 15:53:33,943 INFO /usr/local/bin/bench worker
+2023-12-12 15:53:33,948 INFO /usr/local/bin/bench schedule
+2023-12-12 15:55:35,113 INFO /usr/local/bin/bench buil
+2023-12-12 15:55:39,610 INFO /usr/local/bin/bench build
+2023-12-12 15:56:44,871 INFO /usr/local/bin/bench start
+2023-12-12 15:56:45,666 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 15:56:45,674 INFO /usr/local/bin/bench watch
+2023-12-12 15:56:45,726 INFO /usr/local/bin/bench worker
+2023-12-12 15:56:45,733 INFO /usr/local/bin/bench schedule
+2023-12-12 15:59:46,146 INFO /usr/local/bin/bench build
+2023-12-12 16:01:10,410 INFO /usr/local/bin/bench start
+2023-12-12 16:01:11,050 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:01:11,101 INFO /usr/local/bin/bench watch
+2023-12-12 16:01:11,126 INFO /usr/local/bin/bench schedule
+2023-12-12 16:01:11,154 INFO /usr/local/bin/bench worker
+2023-12-12 16:06:03,437 INFO /usr/local/bin/bench build
+2023-12-12 16:06:58,611 INFO /usr/local/bin/bench start
+2023-12-12 16:06:59,283 INFO /usr/local/bin/bench watch
+2023-12-12 16:06:59,285 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:06:59,310 INFO /usr/local/bin/bench schedule
+2023-12-12 16:06:59,355 INFO /usr/local/bin/bench worker
+2023-12-12 16:14:22,075 INFO /usr/local/bin/bench build
+2023-12-12 16:15:42,881 INFO /usr/local/bin/bench start
+2023-12-12 16:15:43,491 INFO /usr/local/bin/bench schedule
+2023-12-12 16:15:43,519 INFO /usr/local/bin/bench watch
+2023-12-12 16:15:43,521 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:15:43,523 INFO /usr/local/bin/bench worker
+2023-12-12 16:21:08,815 INFO /usr/local/bin/bench build
+2023-12-12 16:22:04,252 INFO /usr/local/bin/bench start
+2023-12-12 16:22:04,969 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:22:04,983 INFO /usr/local/bin/bench schedule
+2023-12-12 16:22:04,991 INFO /usr/local/bin/bench watch
+2023-12-12 16:22:05,002 INFO /usr/local/bin/bench worker
+2023-12-12 16:27:22,686 INFO /usr/local/bin/bench build
+2023-12-12 16:28:20,517 INFO /usr/local/bin/bench start
+2023-12-12 16:28:21,226 INFO /usr/local/bin/bench watch
+2023-12-12 16:28:21,234 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:28:21,239 INFO /usr/local/bin/bench schedule
+2023-12-12 16:28:21,286 INFO /usr/local/bin/bench worker
+2023-12-12 16:35:44,915 INFO /usr/local/bin/bench build
+2023-12-12 16:36:41,246 INFO /usr/local/bin/bench start
+2023-12-12 16:36:41,937 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:36:41,943 INFO /usr/local/bin/bench watch
+2023-12-12 16:36:41,977 INFO /usr/local/bin/bench schedule
+2023-12-12 16:36:42,018 INFO /usr/local/bin/bench worker
+2023-12-12 16:40:48,021 INFO /usr/local/bin/bench build
+2023-12-12 16:41:48,975 INFO /usr/local/bin/bench start
+2023-12-12 16:41:49,715 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:41:49,737 INFO /usr/local/bin/bench schedule
+2023-12-12 16:41:49,769 INFO /usr/local/bin/bench worker
+2023-12-12 16:41:49,825 INFO /usr/local/bin/bench watch
+2023-12-12 16:43:44,821 INFO /usr/local/bin/bench build
+2023-12-12 16:44:41,528 INFO /usr/local/bin/bench start
+2023-12-12 16:44:42,224 INFO /usr/local/bin/bench schedule
+2023-12-12 16:44:42,238 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:44:42,253 INFO /usr/local/bin/bench watch
+2023-12-12 16:44:42,290 INFO /usr/local/bin/bench worker
+2023-12-12 16:47:49,804 INFO /usr/local/bin/bench build
+2023-12-12 16:49:16,076 INFO /usr/local/bin/bench start
+2023-12-12 16:49:17,007 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:49:17,041 INFO /usr/local/bin/bench watch
+2023-12-12 16:49:17,054 INFO /usr/local/bin/bench worker
+2023-12-12 16:49:17,058 INFO /usr/local/bin/bench schedule
+2023-12-12 16:58:11,734 INFO /usr/local/bin/bench build
+2023-12-12 16:59:38,966 INFO /usr/local/bin/bench start
+2023-12-12 16:59:39,594 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 16:59:39,616 INFO /usr/local/bin/bench watch
+2023-12-12 16:59:39,630 INFO /usr/local/bin/bench schedule
+2023-12-12 16:59:39,642 INFO /usr/local/bin/bench worker
+2023-12-12 17:02:17,153 INFO /usr/local/bin/bench build
+2023-12-12 17:03:17,688 INFO /usr/local/bin/bench start
+2023-12-12 17:03:18,376 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:03:18,395 INFO /usr/local/bin/bench watch
+2023-12-12 17:03:18,419 INFO /usr/local/bin/bench schedule
+2023-12-12 17:03:18,427 INFO /usr/local/bin/bench worker
+2023-12-12 17:04:14,778 INFO /usr/local/bin/bench build
+2023-12-12 17:05:23,969 INFO /usr/local/bin/bench start
+2023-12-12 17:05:24,654 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:05:24,675 INFO /usr/local/bin/bench watch
+2023-12-12 17:05:24,708 INFO /usr/local/bin/bench schedule
+2023-12-12 17:05:24,718 INFO /usr/local/bin/bench worker
+2023-12-12 17:06:32,466 INFO /usr/local/bin/bench start
+2023-12-12 17:06:33,260 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:06:33,308 INFO /usr/local/bin/bench watch
+2023-12-12 17:06:33,326 INFO /usr/local/bin/bench schedule
+2023-12-12 17:06:33,352 INFO /usr/local/bin/bench worker
+2023-12-12 17:12:51,869 INFO /usr/local/bin/bench build
+2023-12-12 17:13:47,908 INFO /usr/local/bin/bench start
+2023-12-12 17:13:48,664 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:13:48,681 INFO /usr/local/bin/bench watch
+2023-12-12 17:13:48,714 INFO /usr/local/bin/bench schedule
+2023-12-12 17:13:48,740 INFO /usr/local/bin/bench worker
+2023-12-12 17:16:43,293 INFO /usr/local/bin/bench build
+2023-12-12 17:17:59,592 INFO /usr/local/bin/bench start
+2023-12-12 17:18:00,302 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:18:00,311 INFO /usr/local/bin/bench watch
+2023-12-12 17:18:00,320 INFO /usr/local/bin/bench worker
+2023-12-12 17:18:00,324 INFO /usr/local/bin/bench schedule
+2023-12-12 17:21:58,955 INFO /usr/local/bin/bench build
+2023-12-12 17:22:57,096 INFO /usr/local/bin/bench start
+2023-12-12 17:22:57,796 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:22:57,832 INFO /usr/local/bin/bench schedule
+2023-12-12 17:22:57,853 INFO /usr/local/bin/bench watch
+2023-12-12 17:22:57,902 INFO /usr/local/bin/bench worker
+2023-12-12 17:32:24,025 INFO /usr/local/bin/bench buid
+2023-12-12 17:32:27,726 INFO /usr/local/bin/bench build
+2023-12-12 17:33:25,498 INFO /usr/local/bin/bench start
+2023-12-12 17:33:26,287 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:33:26,292 INFO /usr/local/bin/bench schedule
+2023-12-12 17:33:26,295 INFO /usr/local/bin/bench watch
+2023-12-12 17:33:26,327 INFO /usr/local/bin/bench worker
+2023-12-12 17:52:38,813 INFO /usr/local/bin/bench build
+2023-12-12 17:54:18,744 INFO /usr/local/bin/bench start
+2023-12-12 17:54:19,410 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:54:19,424 INFO /usr/local/bin/bench worker
+2023-12-12 17:54:19,445 INFO /usr/local/bin/bench watch
+2023-12-12 17:54:19,458 INFO /usr/local/bin/bench schedule
+2023-12-12 17:58:34,373 INFO /usr/local/bin/bench build
+2023-12-12 17:59:49,800 INFO /usr/local/bin/bench start
+2023-12-12 17:59:50,468 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 17:59:50,475 INFO /usr/local/bin/bench watch
+2023-12-12 17:59:50,496 INFO /usr/local/bin/bench worker
+2023-12-12 17:59:50,502 INFO /usr/local/bin/bench schedule
+2023-12-12 18:00:01,827 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-12 18:01:37,519 INFO /usr/local/bin/bench build
+2023-12-12 18:02:33,416 INFO /usr/local/bin/bench start
+2023-12-12 18:02:34,145 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:02:34,173 INFO /usr/local/bin/bench schedule
+2023-12-12 18:02:34,194 INFO /usr/local/bin/bench watch
+2023-12-12 18:02:34,256 INFO /usr/local/bin/bench worker
+2023-12-12 18:27:05,240 INFO /usr/local/bin/bench build
+2023-12-12 18:30:39,416 INFO /usr/local/bin/bench build
+2023-12-12 18:32:29,646 INFO /usr/local/bin/bench build
+2023-12-12 18:33:29,392 INFO /usr/local/bin/bench build
+2023-12-12 18:36:36,931 INFO /usr/local/bin/bench build
+2023-12-12 18:39:29,631 INFO /usr/local/bin/bench build
+2023-12-12 18:41:39,376 INFO /usr/local/bin/bench build
+2023-12-12 18:42:52,874 INFO /usr/local/bin/bench start
+2023-12-12 18:42:53,580 INFO /usr/local/bin/bench schedule
+2023-12-12 18:42:53,596 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:42:53,621 INFO /usr/local/bin/bench watch
+2023-12-12 18:42:53,627 INFO /usr/local/bin/bench worker
+2023-12-12 18:44:40,039 INFO /usr/local/bin/bench build
+2023-12-12 18:45:35,080 INFO /usr/local/bin/bench start
+2023-12-12 18:45:35,782 INFO /usr/local/bin/bench schedule
+2023-12-12 18:45:35,795 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:45:35,806 INFO /usr/local/bin/bench watch
+2023-12-12 18:45:35,848 INFO /usr/local/bin/bench worker
+2023-12-12 18:47:29,763 INFO /usr/local/bin/bench build
+2023-12-12 18:48:32,456 INFO /usr/local/bin/bench start
+2023-12-12 18:48:33,174 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:48:33,189 INFO /usr/local/bin/bench watch
+2023-12-12 18:48:33,201 INFO /usr/local/bin/bench worker
+2023-12-12 18:48:33,205 INFO /usr/local/bin/bench schedule
+2023-12-12 18:49:58,196 INFO /usr/local/bin/bench build
+2023-12-12 18:51:06,717 INFO /usr/local/bin/bench start
+2023-12-12 18:51:07,376 INFO /usr/local/bin/bench schedule
+2023-12-12 18:51:07,385 INFO /usr/local/bin/bench watch
+2023-12-12 18:51:07,391 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:51:07,435 INFO /usr/local/bin/bench worker
+2023-12-12 18:58:11,482 INFO /usr/local/bin/bench build
+2023-12-12 18:59:10,571 INFO /usr/local/bin/bench start
+2023-12-12 18:59:11,311 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 18:59:11,327 INFO /usr/local/bin/bench schedule
+2023-12-12 18:59:11,350 INFO /usr/local/bin/bench watch
+2023-12-12 18:59:11,360 INFO /usr/local/bin/bench worker
+2023-12-12 19:26:28,420 INFO /usr/local/bin/bench start
+2023-12-12 19:26:29,197 INFO /usr/local/bin/bench watch
+2023-12-12 19:26:29,201 INFO /usr/local/bin/bench serve --port 8000
+2023-12-12 19:26:29,227 INFO /usr/local/bin/bench worker
+2023-12-12 19:26:29,250 INFO /usr/local/bin/bench schedule
+2023-12-13 10:46:54,672 INFO /usr/local/bin/bench build
+2023-12-13 10:49:35,999 INFO /usr/local/bin/bench start
+2023-12-13 10:49:36,742 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 10:49:36,777 INFO /usr/local/bin/bench watch
+2023-12-13 10:49:36,811 INFO /usr/local/bin/bench worker
+2023-12-13 10:49:36,825 INFO /usr/local/bin/bench schedule
+2023-12-13 11:09:47,441 INFO /usr/local/bin/bench start
+2023-12-13 11:09:48,120 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 11:09:48,145 INFO /usr/local/bin/bench watch
+2023-12-13 11:09:48,173 INFO /usr/local/bin/bench schedule
+2023-12-13 11:09:48,208 INFO /usr/local/bin/bench worker
+2023-12-13 16:54:57,132 INFO /usr/local/bin/bench start
+2023-12-13 16:54:59,281 INFO /usr/local/bin/bench worker
+2023-12-13 16:54:59,302 INFO /usr/local/bin/bench watch
+2023-12-13 16:54:59,307 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 16:54:59,449 INFO /usr/local/bin/bench schedule
+2023-12-13 17:15:29,460 INFO /usr/local/bin/bench start
+2023-12-13 17:15:30,303 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 17:15:30,328 INFO /usr/local/bin/bench watch
+2023-12-13 17:15:30,374 INFO /usr/local/bin/bench schedule
+2023-12-13 17:15:30,395 INFO /usr/local/bin/bench worker
+2023-12-13 17:17:53,039 INFO /usr/local/bin/bench set-config -g developer_mode 1
+2023-12-13 17:18:20,439 INFO /usr/local/bin/bench start
+2023-12-13 17:18:21,156 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 17:18:21,185 INFO /usr/local/bin/bench schedule
+2023-12-13 17:18:21,219 INFO /usr/local/bin/bench watch
+2023-12-13 17:18:21,241 INFO /usr/local/bin/bench worker
+2023-12-13 17:36:58,680 INFO /usr/local/bin/bench build
+2023-12-13 17:38:23,056 INFO /usr/local/bin/bench start
+2023-12-13 17:38:23,901 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 17:38:23,925 INFO /usr/local/bin/bench schedule
+2023-12-13 17:38:23,957 INFO /usr/local/bin/bench worker
+2023-12-13 17:38:23,966 INFO /usr/local/bin/bench watch
+2023-12-13 18:00:01,399 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-13 18:09:36,195 INFO /usr/local/bin/bench restart
+2023-12-13 18:09:36,201 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-13 18:09:40,673 INFO /usr/local/bin/bench start
+2023-12-13 18:12:32,022 INFO /usr/local/bin/bench start
+2023-12-13 18:12:32,985 INFO /usr/local/bin/bench worker
+2023-12-13 18:12:33,015 INFO /usr/local/bin/bench watch
+2023-12-13 18:12:33,070 INFO /usr/local/bin/bench serve --port 8000
+2023-12-13 18:12:33,084 INFO /usr/local/bin/bench schedule
+2023-12-13 18:26:42,086 INFO /usr/local/bin/bench build
+2023-12-16 13:34:46,863 INFO /usr/local/bin/bench build
+2023-12-16 13:37:17,187 INFO /usr/local/bin/bench build
+2023-12-16 13:38:21,774 INFO /usr/local/bin/bench start
+2023-12-16 13:38:22,550 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 13:38:22,559 INFO /usr/local/bin/bench watch
+2023-12-16 13:38:22,642 INFO /usr/local/bin/bench schedule
+2023-12-16 13:38:22,655 INFO /usr/local/bin/bench worker
+2023-12-16 13:40:34,245 INFO /usr/local/bin/bench build
+2023-12-16 13:41:30,177 INFO /usr/local/bin/bench start
+2023-12-16 13:41:30,932 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 13:41:30,946 INFO /usr/local/bin/bench schedule
+2023-12-16 13:41:30,939 INFO /usr/local/bin/bench watch
+2023-12-16 13:41:31,007 INFO /usr/local/bin/bench worker
+2023-12-16 13:45:36,775 INFO /usr/local/bin/bench build
+2023-12-16 13:46:33,685 INFO /usr/local/bin/bench start
+2023-12-16 13:46:34,370 INFO /usr/local/bin/bench watch
+2023-12-16 13:46:34,388 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 13:46:34,442 INFO /usr/local/bin/bench worker
+2023-12-16 13:46:34,443 INFO /usr/local/bin/bench schedule
+2023-12-16 14:55:19,472 INFO /usr/local/bin/bench start
+2023-12-16 14:55:20,386 INFO /usr/local/bin/bench schedule
+2023-12-16 14:55:20,394 INFO /usr/local/bin/bench watch
+2023-12-16 14:55:20,451 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 14:55:20,535 INFO /usr/local/bin/bench worker
+2023-12-16 15:11:16,203 INFO /usr/local/bin/bench build
+2023-12-16 15:41:47,197 INFO /usr/local/bin/bench build
+2023-12-16 15:42:41,092 INFO /usr/local/bin/bench start
+2023-12-16 15:42:41,916 INFO /usr/local/bin/bench worker
+2023-12-16 15:42:41,923 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 15:42:41,956 INFO /usr/local/bin/bench watch
+2023-12-16 15:42:41,976 INFO /usr/local/bin/bench schedule
+2023-12-16 16:02:30,340 INFO /usr/local/bin/bench build
+2023-12-16 16:03:23,199 INFO /usr/local/bin/bench start
+2023-12-16 16:03:23,844 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 16:03:23,852 INFO /usr/local/bin/bench schedule
+2023-12-16 16:03:23,865 INFO /usr/local/bin/bench watch
+2023-12-16 16:03:23,886 INFO /usr/local/bin/bench worker
+2023-12-16 16:16:05,545 INFO /usr/local/bin/bench build
+2023-12-16 16:17:22,315 INFO /usr/local/bin/bench build
+2023-12-16 16:18:06,059 INFO /usr/local/bin/bench start
+2023-12-16 16:18:06,677 INFO /usr/local/bin/bench watch
+2023-12-16 16:18:06,693 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 16:18:06,714 INFO /usr/local/bin/bench worker
+2023-12-16 16:18:06,727 INFO /usr/local/bin/bench schedule
+2023-12-16 16:24:40,346 INFO /usr/local/bin/bench build
+2023-12-16 16:26:14,341 INFO /usr/local/bin/bench start
+2023-12-16 16:26:15,004 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 16:26:15,021 INFO /usr/local/bin/bench schedule
+2023-12-16 16:26:15,036 INFO /usr/local/bin/bench worker
+2023-12-16 16:26:15,059 INFO /usr/local/bin/bench watch
+2023-12-16 16:37:30,000 INFO /usr/local/bin/bench build
+2023-12-16 16:38:28,486 INFO /usr/local/bin/bench start
+2023-12-16 16:38:29,163 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 16:38:29,184 INFO /usr/local/bin/bench watch
+2023-12-16 16:38:29,213 INFO /usr/local/bin/bench schedule
+2023-12-16 16:38:29,237 INFO /usr/local/bin/bench worker
+2023-12-16 18:00:01,271 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-16 18:02:27,329 INFO /usr/local/bin/bench start
+2023-12-16 18:02:28,145 INFO /usr/local/bin/bench watch
+2023-12-16 18:02:28,162 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 18:02:28,173 INFO /usr/local/bin/bench schedule
+2023-12-16 18:02:28,229 INFO /usr/local/bin/bench worker
+2023-12-16 18:18:56,070 INFO /usr/local/bin/bench build
+2023-12-16 18:22:59,431 INFO /usr/local/bin/bench build
+2023-12-16 18:27:06,027 INFO /usr/local/bin/bench build
+2023-12-16 18:32:30,415 INFO /usr/local/bin/bench build
+2023-12-16 18:34:18,950 INFO /usr/local/bin/bench build
+2023-12-16 18:36:24,851 INFO /usr/local/bin/bench build
+2023-12-16 18:37:25,867 INFO /usr/local/bin/bench start
+2023-12-16 18:37:26,643 INFO /usr/local/bin/bench watch
+2023-12-16 18:37:26,652 INFO /usr/local/bin/bench schedule
+2023-12-16 18:37:26,658 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 18:37:26,686 INFO /usr/local/bin/bench worker
+2023-12-16 18:38:54,037 INFO /usr/local/bin/bench bhild
+2023-12-16 18:38:57,491 INFO /usr/local/bin/bench build
+2023-12-16 18:40:22,001 INFO /usr/local/bin/bench start
+2023-12-16 18:40:22,655 INFO /usr/local/bin/bench worker
+2023-12-16 18:40:22,667 INFO /usr/local/bin/bench watch
+2023-12-16 18:40:22,689 INFO /usr/local/bin/bench schedule
+2023-12-16 18:40:22,702 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 19:13:24,115 INFO /usr/local/bin/bench build
+2023-12-16 19:14:29,625 INFO /usr/local/bin/bench start
+2023-12-16 19:14:30,283 INFO /usr/local/bin/bench schedule
+2023-12-16 19:14:30,290 INFO /usr/local/bin/bench worker
+2023-12-16 19:14:30,293 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 19:14:30,297 INFO /usr/local/bin/bench watch
+2023-12-16 19:17:59,520 INFO /usr/local/bin/bench build
+2023-12-16 19:18:57,119 INFO /usr/local/bin/bench start
+2023-12-16 19:18:57,794 INFO /usr/local/bin/bench schedule
+2023-12-16 19:18:57,798 INFO /usr/local/bin/bench watch
+2023-12-16 19:18:57,806 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 19:18:57,829 INFO /usr/local/bin/bench worker
+2023-12-16 19:40:49,473 INFO /usr/local/bin/bench build
+2023-12-16 19:42:07,126 INFO /usr/local/bin/bench build
+2023-12-16 19:43:37,258 INFO /usr/local/bin/bench build
+2023-12-16 19:45:41,903 INFO /usr/local/bin/bench build
+2023-12-16 19:51:50,911 INFO /usr/local/bin/bench build
+2023-12-16 20:00:10,576 INFO /usr/local/bin/bench build
+2023-12-16 20:21:40,677 INFO /usr/local/bin/bench build
+2023-12-16 20:28:25,577 INFO /usr/local/bin/bench build
+2023-12-16 20:30:22,039 INFO /usr/local/bin/bench build
+2023-12-16 20:49:47,580 INFO /usr/local/bin/bench build
+2023-12-16 20:51:00,817 INFO /usr/local/bin/bench build
+2023-12-16 20:53:00,887 INFO /usr/local/bin/bench build
+2023-12-16 20:53:56,787 INFO /usr/local/bin/bench start
+2023-12-16 20:53:57,439 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 20:53:57,455 INFO /usr/local/bin/bench schedule
+2023-12-16 20:53:57,461 INFO /usr/local/bin/bench worker
+2023-12-16 20:53:57,502 INFO /usr/local/bin/bench watch
+2023-12-16 20:56:48,218 INFO /usr/local/bin/bench build
+2023-12-16 20:57:47,195 INFO /usr/local/bin/bench start
+2023-12-16 20:57:47,892 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 20:57:47,907 INFO /usr/local/bin/bench schedule
+2023-12-16 20:57:47,921 INFO /usr/local/bin/bench worker
+2023-12-16 20:57:47,940 INFO /usr/local/bin/bench watch
+2023-12-16 20:58:31,363 INFO /usr/local/bin/bench build
+2023-12-16 20:59:27,084 INFO /usr/local/bin/bench start
+2023-12-16 20:59:27,724 INFO /usr/local/bin/bench watch
+2023-12-16 20:59:27,742 INFO /usr/local/bin/bench schedule
+2023-12-16 20:59:27,757 INFO /usr/local/bin/bench worker
+2023-12-16 20:59:27,773 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 23:32:15,341 INFO /usr/local/bin/bench build
+2023-12-16 23:33:08,730 INFO /usr/local/bin/bench start
+2023-12-16 23:33:09,345 INFO /usr/local/bin/bench watch
+2023-12-16 23:33:09,355 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 23:33:09,367 INFO /usr/local/bin/bench worker
+2023-12-16 23:33:09,387 INFO /usr/local/bin/bench schedule
+2023-12-16 23:36:14,495 INFO /usr/local/bin/bench build
+2023-12-16 23:45:58,569 INFO /usr/local/bin/bench start
+2023-12-16 23:45:59,184 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 23:45:59,202 INFO /usr/local/bin/bench watch
+2023-12-16 23:45:59,215 INFO /usr/local/bin/bench schedule
+2023-12-16 23:45:59,238 INFO /usr/local/bin/bench worker
+2023-12-16 23:50:22,650 INFO /usr/local/bin/bench build
+2023-12-16 23:52:24,307 INFO /usr/local/bin/bench start
+2023-12-16 23:52:24,891 INFO /usr/local/bin/bench serve --port 8000
+2023-12-16 23:52:24,905 INFO /usr/local/bin/bench worker
+2023-12-16 23:52:24,920 INFO /usr/local/bin/bench schedule
+2023-12-16 23:52:24,942 INFO /usr/local/bin/bench watch
+2023-12-17 00:00:02,151 INFO /usr/local/bin/bench --verbose --site all backup
+2023-12-17 00:22:20,345 INFO /usr/local/bin/bench restart
+2023-12-17 00:22:20,350 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-12-17 00:22:24,688 INFO /usr/local/bin/bench stop
+2023-12-17 00:22:32,419 INFO /usr/local/bin/bench exit
+2023-12-17 00:22:39,544 INFO /usr/local/bin/bench start
+2023-12-17 00:22:46,284 INFO /usr/local/bin/bench start
+2023-12-17 00:41:00,573 INFO /usr/local/bin/bench build
+2023-12-17 00:41:59,658 INFO /usr/local/bin/bench start
+2023-12-17 00:42:00,497 INFO /usr/local/bin/bench watch
+2023-12-17 00:42:00,520 INFO /usr/local/bin/bench schedule
+2023-12-17 00:42:00,539 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 00:42:00,563 INFO /usr/local/bin/bench worker
+2023-12-17 00:45:46,291 INFO /usr/local/bin/bench build
+2023-12-17 00:46:44,835 INFO /usr/local/bin/bench start
+2023-12-17 00:46:45,473 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 00:46:45,496 INFO /usr/local/bin/bench watch
+2023-12-17 00:46:45,527 INFO /usr/local/bin/bench worker
+2023-12-17 00:46:45,546 INFO /usr/local/bin/bench schedule
+2023-12-17 00:51:37,731 INFO /usr/local/bin/bench build
+2023-12-17 00:52:46,587 INFO /usr/local/bin/bench start
+2023-12-17 00:52:47,207 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 00:52:47,214 INFO /usr/local/bin/bench watch
+2023-12-17 00:52:47,248 INFO /usr/local/bin/bench schedule
+2023-12-17 00:52:47,256 INFO /usr/local/bin/bench worker
+2023-12-17 00:58:12,395 INFO /usr/local/bin/bench build
+2023-12-17 01:00:04,568 INFO /usr/local/bin/bench start
+2023-12-17 01:00:05,117 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:00:05,152 INFO /usr/local/bin/bench watch
+2023-12-17 01:00:05,170 INFO /usr/local/bin/bench schedule
+2023-12-17 01:00:05,177 INFO /usr/local/bin/bench worker
+2023-12-17 01:01:02,740 INFO /usr/local/bin/bench build
+2023-12-17 01:01:14,370 INFO /usr/local/bin/bench build
+2023-12-17 01:01:24,431 INFO /usr/local/bin/bench build
+2023-12-17 01:02:50,825 INFO /usr/local/bin/bench start
+2023-12-17 01:02:51,397 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:02:51,430 INFO /usr/local/bin/bench worker
+2023-12-17 01:02:51,445 INFO /usr/local/bin/bench watch
+2023-12-17 01:02:51,462 INFO /usr/local/bin/bench schedule
+2023-12-17 01:05:18,522 INFO /usr/local/bin/bench build
+2023-12-17 01:06:13,946 INFO /usr/local/bin/bench start
+2023-12-17 01:06:14,559 INFO /usr/local/bin/bench worker
+2023-12-17 01:06:14,571 INFO /usr/local/bin/bench watch
+2023-12-17 01:06:14,578 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:06:14,605 INFO /usr/local/bin/bench schedule
+2023-12-17 01:07:18,072 INFO /usr/local/bin/bench build
+2023-12-17 01:09:28,333 INFO /usr/local/bin/bench start
+2023-12-17 01:09:28,963 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:09:28,970 INFO /usr/local/bin/bench worker
+2023-12-17 01:09:28,986 INFO /usr/local/bin/bench schedule
+2023-12-17 01:09:29,025 INFO /usr/local/bin/bench watch
+2023-12-17 01:16:25,083 INFO /usr/local/bin/bench build
+2023-12-17 01:19:26,771 INFO /usr/local/bin/bench build
+2023-12-17 01:20:24,441 INFO /usr/local/bin/bench start
+2023-12-17 01:20:25,077 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:20:25,086 INFO /usr/local/bin/bench schedule
+2023-12-17 01:20:25,096 INFO /usr/local/bin/bench watch
+2023-12-17 01:20:25,099 INFO /usr/local/bin/bench worker
+2023-12-17 01:22:43,456 INFO /usr/local/bin/bench build
+2023-12-17 01:23:39,079 INFO /usr/local/bin/bench start
+2023-12-17 01:23:39,692 INFO /usr/local/bin/bench schedule
+2023-12-17 01:23:39,706 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:23:39,739 INFO /usr/local/bin/bench worker
+2023-12-17 01:23:39,751 INFO /usr/local/bin/bench watch
+2023-12-17 01:32:47,413 INFO /usr/local/bin/bench build
+2023-12-17 01:37:29,693 INFO /usr/local/bin/bench build
+2023-12-17 01:38:43,560 INFO /usr/local/bin/bench start
+2023-12-17 01:38:44,141 INFO /usr/local/bin/bench worker
+2023-12-17 01:38:44,148 INFO /usr/local/bin/bench watch
+2023-12-17 01:38:44,151 INFO /usr/local/bin/bench schedule
+2023-12-17 01:38:44,159 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:53:55,313 INFO /usr/local/bin/bench build
+2023-12-17 01:54:49,298 INFO /usr/local/bin/bench start
+2023-12-17 01:54:49,930 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:54:49,977 INFO /usr/local/bin/bench schedule
+2023-12-17 01:54:50,000 INFO /usr/local/bin/bench watch
+2023-12-17 01:54:50,003 INFO /usr/local/bin/bench worker
+2023-12-17 01:57:13,716 INFO /usr/local/bin/bench build
+2023-12-17 01:58:04,414 INFO /usr/local/bin/bench start
+2023-12-17 01:58:05,050 INFO /usr/local/bin/bench watch
+2023-12-17 01:58:05,066 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 01:58:05,092 INFO /usr/local/bin/bench worker
+2023-12-17 01:58:05,099 INFO /usr/local/bin/bench schedule
+2023-12-17 01:59:38,231 INFO /usr/local/bin/bench build
+2023-12-17 02:00:34,915 INFO /usr/local/bin/bench start
+2023-12-17 02:00:35,562 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:00:35,581 INFO /usr/local/bin/bench watch
+2023-12-17 02:00:35,591 INFO /usr/local/bin/bench schedule
+2023-12-17 02:00:35,614 INFO /usr/local/bin/bench worker
+2023-12-17 02:02:32,018 INFO /usr/local/bin/bench build
+2023-12-17 02:07:23,703 INFO /usr/local/bin/bench build
+2023-12-17 02:08:19,803 INFO /usr/local/bin/bench start
+2023-12-17 02:08:20,487 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:08:20,493 INFO /usr/local/bin/bench watch
+2023-12-17 02:08:20,498 INFO /usr/local/bin/bench schedule
+2023-12-17 02:08:20,511 INFO /usr/local/bin/bench worker
+2023-12-17 02:17:34,212 INFO /usr/local/bin/bench build
+2023-12-17 02:18:27,411 INFO /usr/local/bin/bench start
+2023-12-17 02:18:27,996 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:18:28,005 INFO /usr/local/bin/bench watch
+2023-12-17 02:18:28,043 INFO /usr/local/bin/bench schedule
+2023-12-17 02:18:28,052 INFO /usr/local/bin/bench worker
+2023-12-17 02:19:42,990 INFO /usr/local/bin/bench build
+2023-12-17 02:20:36,841 INFO /usr/local/bin/bench start
+2023-12-17 02:20:37,496 INFO /usr/local/bin/bench worker
+2023-12-17 02:20:37,500 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:20:37,502 INFO /usr/local/bin/bench schedule
+2023-12-17 02:20:37,536 INFO /usr/local/bin/bench watch
+2023-12-17 02:24:45,048 INFO /usr/local/bin/bench build
+2023-12-17 02:25:46,134 INFO /usr/local/bin/bench start
+2023-12-17 02:25:46,797 INFO /usr/local/bin/bench schedule
+2023-12-17 02:25:46,798 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:25:46,808 INFO /usr/local/bin/bench worker
+2023-12-17 02:25:46,815 INFO /usr/local/bin/bench watch
+2023-12-17 02:26:57,714 INFO /usr/local/bin/bench build
+2023-12-17 02:28:02,251 INFO /usr/local/bin/bench start
+2023-12-17 02:28:02,888 INFO /usr/local/bin/bench serve --port 8000
+2023-12-17 02:28:02,909 INFO /usr/local/bin/bench watch
+2023-12-17 02:28:02,877 INFO /usr/local/bin/bench worker
+2023-12-17 02:28:02,929 INFO /usr/local/bin/bench schedule
