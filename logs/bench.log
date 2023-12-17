@@ -644,3 +644,8 @@
 2023-12-17 02:28:02,909 INFO /usr/local/bin/bench watch
 2023-12-17 02:28:02,877 INFO /usr/local/bin/bench worker
 2023-12-17 02:28:02,929 INFO /usr/local/bin/bench schedule
+2023-12-17 15:54:04,567 INFO /usr/local/bin/bench start
+2023-12-17 15:54:05,325 INFO /usr/local/bin/bench schedule
+2023-12-17 15:54:05,331 INFO /usr/local/bin/bench worker
+2023-12-17 15:54:05,356 INFO /usr/local/bin/bench watch
+2023-12-17 15:54:05,434 INFO /usr/local/bin/bench serve --port 8000
